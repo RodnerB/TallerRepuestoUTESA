@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+
 
 :root {
   
   line-height: 1.5;
-  font-weight: 400;
   background-color: #F6F6F6;
 
 }
@@ -14,11 +13,18 @@
 
 body,
 * {
-  
+  -webkit-font-smoothing: antialiased;  /* Safari/Chrome */
+  -moz-osx-font-smoothing: grayscale;  /* Firefox en Mac */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Konkhmer Sleokchher', system-ui;
+  font-weight: 400;  
+}
+
+body{
+  color: #252525;
+  
 }
 
 
@@ -170,32 +176,45 @@ main {
     align-items: center;
 
     .header-button{
-      width: 350px;
+      width: auto;
       display: inherit;
       justify-content: space-between;
       align-items: center;
+      gap: 15px;
 
-      button{
-        box-sizing: content-box;
-        border: none;
-        width: auto;
-        padding:  10px;
-        height: 30px;
-        border-radius: 8px;
-        color: #fff;
-        background-color: #4361EE;
-        display: inherit;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        font-size: 1rem;
-      }
+      
     }
   }
 }
 
+button{
+  box-sizing: content-box;
+  border: none;
+  width: auto;
+  padding: 10px;
+  height: 30px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4361EE;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-.primero {
+button:hover, button:active{
+  background-color: #5570ef;
+}
+
+.add-producto{
+  background-color: #D3D6DB;
+  color: #252525;
+}
+
+.primero, .primero h3 {
   background-color: #6981F1;
   color: #fff;
-}
+  
+} 
