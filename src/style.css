@@ -213,8 +213,12 @@ button:hover, button:active{
   color: #252525;
 }
 
-.primero, .primero h3 {
+.selected, .selected:hover, .primero:active{
   background-color: #6981F1;
   color: #fff;
+  h3{
+    color: inherit;
+  }
+  
   
 } 
