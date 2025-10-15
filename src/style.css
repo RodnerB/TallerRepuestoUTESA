@@ -220,3 +220,148 @@ button:hover, button:active{
     color: inherit;
   }
 } 
+
+
+.card-container{
+  margin-top: -20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  
+
+  .card{
+    background-color: #FFFFFF;
+    border: 1px solid #D3D6DB;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #65758C;
+    padding: 18px 20px;
+    height: 140px;
+  }
+
+  h2{
+    color: #252525;
+    font-size: 2rem;
+  }
+}
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 20px;
+
+  .resume{
+    background-color: #FFFFFF;
+    border: 1px solid #D3D6DB;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #65758C;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 1.125em 1.25em;
+
+    h2{
+      color: #252525;
+      font-size: 2rem;
+    }
+  }
+
+  .weekly{
+
+    svg{
+      align-self: flex-start;
+      cursor: pointer;
+    }
+
+    span{
+      color: #009C00;
+    }
+
+    .stats{
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: end;
+      gap: 5px;
+
+      .day{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+
+        .bar{
+          width: 90%;
+          height: 50%;
+          background-color: #b4c0f8;
+          border-radius: 1rem 1rem 0px 0px;
+        }
+
+        
+
+        span{
+          font-size: 1rem;
+          color: #65758C;
+        }
+      }
+
+      .selected-day {
+        .bar{
+          background-color: #4361EE;
+          height: 80%;
+        }
+
+        span{
+          color: #252525;
+        }
+      }
+    }
+
+    
+  }
+
+  .ventas{
+
+    header{
+      font-size: 1.125rem;
+      color: #252525;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+
+      .textos{
+        width: 100%;
+        font-size: .875rem;
+        color: #475569;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .text-orden{
+          width: 120px;
+        }
+
+        .text-metodo{
+          width: 140px;
+        }
+
+        .text-costo{
+          width: 100px;
+          text-align: end;
+        }
+      }
+
+    }
+  }
+
+}
