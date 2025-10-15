@@ -153,6 +153,7 @@ nav ul {
   gap: 10px;
   padding: 3px 10px;
   border-radius: 8px;
+  cursor: pointer;
 
   &:hover,
   &:active {
@@ -163,17 +164,24 @@ nav ul {
 
 main {
   flex: 1;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .bento{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   header{
-    background-color: aqua;
     padding-bottom: 40px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    h1{
+      font-size: 2.25rem;
+    }
 
     .header-button{
       width: auto;
@@ -211,6 +219,10 @@ button:hover, button:active{
 .add-producto{
   background-color: #D3D6DB;
   color: #252525;
+
+  &:hover, &:active{
+    background-color: #B9BCC1;
+  }
 }
 
 .selected, .selected:hover, .primero:active{
